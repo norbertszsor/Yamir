@@ -4,6 +4,6 @@ namespace Yamir.Data.Models
 {
     public class CartEm : AuditableEntity
     {
-        public ICollection<CartItem>? CartItems { get; set; }
+        public ICollection<CartItemEm>? CartItems { get; set; }
     }
 }

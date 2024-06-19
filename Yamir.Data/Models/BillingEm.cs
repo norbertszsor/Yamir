@@ -1,27 +1,28 @@
 ﻿using Yamir.Data.Abstraction;
+using Yamir.Data.Enums;
 
 namespace Yamir.Data.Models
 {
-    public class BillingEm : Entity
+    public class BillingEm : AuditableEntity
     {
-        public required string Name { get; set; }
+        public required Guid CartId { get; set; }
 
-        public required string Address { get; set; }
+        public required Guid CustomerId { get; set; }
 
-        public required string City { get; set; }
+        public required CartEm Cart { get; set; }
 
-        public required string State { get; set; }
+        public required CustomerEm Customer { get; set; }
 
-        public required string Zip { get; set; }
+        public decimal Value { get; set; }
 
-        public required string Country { get; set; }
+        public decimal Tax { get; set; }
 
-        public required string Phone { get; set; }
+        public decimal? Shipping { get; set; }
 
-        public required string Email { get; set; }
+        public decimal? Discount { get; set; }
 
-        public Guid? UserId { get; set; }
+        public decimal Total { get; set; }
 
-        public UserEm? User { get; set; }
+        public BillingStatus Status { get; set; }
     }
 }

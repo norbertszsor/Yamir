@@ -2,7 +2,7 @@
 
 namespace Yamir.Data.Models
 {
-    public class RegionEm : Entity
+    public class RegionEm : AuditableEntity
     {
         public required string Name { get; set; }
 

@@ -2,7 +2,7 @@
 
 namespace Yamir.Data.Models
 {
-    public class CartItem : Entity
+    public class CartItemEm : Entity
     {
         public required int Quantity { get; set; }
 
