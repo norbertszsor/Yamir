@@ -5,5 +5,6 @@ namespace Yamir.Transfer.Region.Query
 {
     public class GetRegionQuery : IQuery<RegionDto>
     {
+        public Guid Id { get; set; }
     }
 }

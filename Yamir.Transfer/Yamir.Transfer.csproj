@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yamir.Data\Yamir.Data.csproj" />
     <ProjectReference Include="..\Yamir.Shared\Yamir.Shared.csproj" />
   </ItemGroup>
 

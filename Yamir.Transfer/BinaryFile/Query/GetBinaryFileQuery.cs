@@ -5,5 +5,6 @@ namespace Yamir.Transfer.BinaryFile.Query
 {
     public class GetBinaryFileQuery : IQuery<BinaryFileDto>
     {
+        public Guid Id { get; set; }
     }
 }
