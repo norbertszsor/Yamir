@@ -10,7 +10,7 @@ namespace Yamir.Api.Endpoints
         private const string GetRegion = "api/region/get";
         private const string GetRegionList = "api/region/list";
         private const string CreateRegion = "api/region/create";
-        private const string UpdateRegion = "api/region/update}";
+        private const string UpdateRegion = "api/region/update";
         private const string DeleteRegion = "api/region/delete";
 
         public static void MapRegionEndpoint(this IEndpointRouteBuilder app)

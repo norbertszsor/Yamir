@@ -17,7 +17,7 @@ namespace Yamir.Handling.Abstraction
     {
     }
 
-    public interface ISortQueryHandler<in TRequest, TResponse> : IQueryHandler<TRequest, IPagedList<TResponse>>
+    public interface ISortQueryHandler<in TRequest, TResponse> : IPagedQueryHandler<TRequest, TResponse>
         where TRequest : SortQuery<TResponse>
     {
     }

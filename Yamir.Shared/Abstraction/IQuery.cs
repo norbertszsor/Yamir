@@ -13,22 +13,22 @@ namespace Yamir.Shared.Abstraction
 
     public abstract class PagedQuery<TResponse> : IQuery<IPagedList<TResponse>>
     {
-        public int? PageIndex { get; }
+        public int? PageIndex { get; set; }
 
-        public int? PageSize { get; }
+        public int? PageSize { get; set; }
     }
 
-    public abstract class SortQuery<TResponse> : SearchQuery<TResponse>
+    public abstract class SortQuery<TResponse> : PagedQuery<TResponse>
     {
-        public string? Sort { get; }
+        public string? Sort { get; set; }
 
-        public string? Order { get; }
+        public string? Order { get; set; }
     }
 
-    public abstract class SearchQuery<TResponse> : PagedQuery<TResponse>
+    public abstract class SearchQuery<TResponse> : SortQuery<TResponse>
     {
-        public string? Search { get; }
+        public string? Search { get; set; }
 
-        public string[]? Fields { get; }
+        public string[]? Fields { get; set; }
     }
 }
