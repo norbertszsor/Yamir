@@ -7,16 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
     <PackageReference Include="MediatR" Version="12.3.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Yamir.Infrastructure\Yamir.Infrastructure.csproj" />
     <ProjectReference Include="..\Yamir.Shared\Yamir.Shared.csproj" />
     <ProjectReference Include="..\Yamir.Transfer\Yamir.Transfer.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

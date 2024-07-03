@@ -1,3 +1,4 @@
+using Yamir.Api.Extensions;
 using Yamir.Api.IoC;
 using Yamir.Handling.Extensions;
 
@@ -27,5 +28,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.Migrate();
 
 app.Run();

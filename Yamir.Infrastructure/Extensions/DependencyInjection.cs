@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Yamir.Infrastructure.Abstraction;
+using Yamir.Infrastructure.Services;
 
 namespace Yamir.Infrastructure.Extensions
 {
@@ -21,6 +22,7 @@ namespace Yamir.Infrastructure.Extensions
         {
             services.AddScoped<IReadOnlyStorage, ReadOnlyStorage>();
             services.AddScoped<IStorage, Storage>();
+            services.AddScoped<IMigrationService, MigrationService>();
 
             return services;
         }

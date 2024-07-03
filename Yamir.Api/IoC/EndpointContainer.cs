@@ -9,6 +9,7 @@ namespace Yamir.Api.IoC
             app.MapBinaryFileEndpoint();
             app.MapRegionEndpoint();
             app.MapTreeEndpoint();
+            app.MapYamirClientProviderEndpoint();
         }
     }
 }
